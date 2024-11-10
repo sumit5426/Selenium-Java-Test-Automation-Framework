@@ -27,7 +27,7 @@
                     <systemPropertyVariables>
                         <browser>chrome</browser>
                         <isLambdaTest>false</isLambdaTest>
-                        <isHeadless>true</isHeadless>
+                        <isHeadless>false</isHeadless>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>

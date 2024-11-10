@@ -1,68 +1,70 @@
-name: Test Automation Workflow
+name: Test Automation WorkFlow
 
 on:
   schedule:
-    - cron: "00 06 * * *"
+  - cron: 00 18 * * *
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-          cache: maven
+    
+    - uses: actions/checkout@v4
+    
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+        
+    - name: Running Test Automation Framework with Maven
+      run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
+     
+    - name: Upload  Test logs
+      if: always()
+      uses: actions/upload-artifact@v4.4.3
+      with:
+       name: Test logs
+       path: logs/
 
-      - name: Running Test Automation Framework with Maven
-        run: mvn test -X -Dsecurity=false -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
+    - name: Upload Screenshots as Artifacts
+      if: always()
+      uses: actions/upload-artifact@v4.4.3
+      with:
+        name: screenshots
+        path: screenshots/
 
-      - name: Upload Test Log
-        if: always()
-        uses: actions/upload-artifact@v4.4.3
-        with:
-          name: Test logs
-          path: logs/
-
-      - name: Upload Screenshots as Artifacts
-        if: always()
-        uses: actions/upload-artifact@v4.4.3
-        with:
-          name: screenshots
-          path: screenshots/
-
-      - name: Upload Test Report
-        if: always()
-        uses: actions/upload-artifact@v4.4.3
-        with:
-          name: Test Report
-          path: report.html
-
-      - name: Test Execution Status
-        run: echo "Test Execution Completed"
-
-      - name: Copy Report to gh-pages Folder
-        if: always()
-
-        run: 
-          mkdir -p public/extent-reports
-          cp -R report.html  public/extent-reports/
-          cp -R screenshots/ public/extent-reports/screenshots/
-          ls -l
-
-      - name: Deploy 🚀
-        if: always()
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-         folder: public/extent-reports/
-         token: ${{secrets.SELENIUM_REPORT}}
-         clean: true
+    - name: Upload HTML Report as Artifact
+      if: always()
+      uses: actions/upload-artifact@v4.4.3
+      with:
+        name: html-report
+        path: report.html
        
+    - name: Test Execution Status
+      if: always()
+      run: echo "Test Execution Completed"
+
+    - name: Copy Report to gh-pages Folder
+      if: always()
+
+      run: |
+        mkdir -p public/extent-reports
+        cp -R report.html  public/extent-reports/
+        cp -R screenshots/ public/extent-reports/screenshots/
+        ls -l
+
+    - name: Deploy 🚀
+      if: always()
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: public/extent-reports/
+        token: ${{ secrets.SELENIUM_REPORT }}
+        clean: true

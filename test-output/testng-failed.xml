@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Auomation-Assignment(failed)">
+    <classes>
+      <class name="uitest.LoginTest3">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- uitest.LoginTest3 -->
+    </classes>
+  </test> <!-- Auomation-Assignment(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

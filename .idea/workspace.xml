@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7bf41ab-2ec5-41b1-a226-6ce6f5a22b66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2oQAvnhe7jYtNAvMYLM6ezp1vNn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Lombok plugin": "Lombok integration problem",
+    "Notification.DoNotAsk-Lombok plugin": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="uitest" />
+      <recent name="pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lead\IdeaProjects\Auomation-Assignment\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LoginTest3.loginWithExcelTest">
+    <configuration name="C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Auomation-Assignment" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest3.loginTest1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Auomation-Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest" />
+      <option name="MAIN_CLASS_NAME" value="uitest.LoginTest3" />
+      <option name="METHOD_NAME" value="loginTest1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest3.loginWithCSVTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Auomation-Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest" />
+      <option name="MAIN_CLASS_NAME" value="uitest.LoginTest3" />
+      <option name="METHOD_NAME" value="loginWithCSVTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest3.loginWithExcelTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Auomation-Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest" />
+      <option name="MAIN_CLASS_NAME" value="uitest.LoginTest3" />
+      <option name="METHOD_NAME" value="loginWithExcelTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest3.loginWithJSONTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Auomation-Assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitest" />
+      <option name="MAIN_CLASS_NAME" value="uitest.LoginTest3" />
+      <option name="METHOD_NAME" value="loginWithJSONTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml" />
+      <item itemvalue="TestNG.LoginTest3.loginWithCSVTest" />
+      <item itemvalue="TestNG.LoginTest3.loginWithJSONTest" />
+      <item itemvalue="TestNG.LoginTest3.loginTest1" />
+      <item itemvalue="TestNG.LoginTest3.loginWithExcelTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginTest3.loginWithExcelTest" />
+        <item itemvalue="TestNG.C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml" />
+        <item itemvalue="TestNG.LoginTest3.loginWithJSONTest" />
+        <item itemvalue="TestNG.LoginTest3.loginWithCSVTest" />
+        <item itemvalue="TestNG.LoginTest3.loginTest1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7bf41ab-2ec5-41b1-a226-6ce6f5a22b66" name="Changes" comment="" />
+      <created>1730791662374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730791662374</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/uitest/LoginTest.java</url>
+          <line>7</line>
+          <properties class="com.ui.test.LoginTest" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/uiutility/JsonUtility.java</url>
+          <line>12</line>
+          <properties class="uiutility.JsonUtility" method="readJson">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

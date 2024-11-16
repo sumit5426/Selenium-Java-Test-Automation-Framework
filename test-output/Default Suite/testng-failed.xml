@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Auomation-Assignment(failed)">
     <classes>
-      <class name="uitest.LoginTest3">
+      <class name="uitest.LoginTest">
         <methods>
           <include name="setUp"/>
           <include name="loginTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- uitest.LoginTest3 -->
+      </class> <!-- uitest.LoginTest -->
     </classes>
   </test> <!-- Auomation-Assignment(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

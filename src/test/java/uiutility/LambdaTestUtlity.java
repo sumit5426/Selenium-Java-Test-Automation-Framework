@@ -24,7 +24,7 @@ public class LambdaTestUtlity {
         ltOptions.put("name", testName);
         ltOptions.put("platformName", "Windows 10");
         ltOptions.put("seCdp", true);
-        ltOptions.put("selenium_version", "4.23.0");
+        ltOptions.put("selenium_version", "4.25.0");
         capabilities.setCapability("LT:Options", ltOptions);
         capabilitiesLocal.set(capabilities);
         WebDriver driver= new RemoteWebDriver(new URL(hubURL), capabilitiesLocal.get());

@@ -5,19 +5,19 @@
   <suite started-at="2024-11-06T21:06:30 IST" name="Default Suite" finished-at="2024-11-06T21:07:26 IST" duration-ms="56192">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest3.loginTest(uipojo.User)[pri:0, instance:uitest.LoginTest3@7d286fb6]" name="loginTest" class="uitest.LoginTest3"/>
+        <method signature="LoginTest3.loginTest(uipojo.User)[pri:0, instance:uitest.LoginTest@7d286fb6]" name="loginTest" class="uitest.LoginTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="LoginTest3.loginTest(uipojo.User)[pri:0, instance:uitest.LoginTest3@7d286fb6]" name="loginTest" class="uitest.LoginTest3"/>
+        <method signature="LoginTest3.loginTest(uipojo.User)[pri:0, instance:uitest.LoginTest@7d286fb6]" name="loginTest" class="uitest.LoginTest"/>
       </group> <!-- e2e -->
     </groups>
     <test started-at="2024-11-06T21:06:30 IST" name="Auomation-Assignment" finished-at="2024-11-06T21:07:26 IST" duration-ms="56192">
-      <class name="uitest.LoginTest3">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:uitest.LoginTest3@7d286fb6]" started-at="2024-11-06T21:06:30 IST" name="setUp" description="Load the homepage of the website" finished-at="2024-11-06T21:06:53 IST" duration-ms="23342" status="PASS">
+      <class name="uitest.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:uitest.LoginTest@7d286fb6]" started-at="2024-11-06T21:06:30 IST" name="setUp" description="Load the homepage of the website" finished-at="2024-11-06T21:06:53 IST" duration-ms="23342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(uipojo.User)[pri:0, instance:uitest.LoginTest3@7d286fb6]" started-at="2024-11-06T21:06:53 IST" name="loginTest" description="verfies with valid user able to login or not" data-provider="LoginTestDataProvider" finished-at="2024-11-06T21:06:58 IST" duration-ms="4622" status="FAIL">
+        <test-method signature="loginTest(uipojo.User)[pri:0, instance:uitest.LoginTest@7d286fb6]" started-at="2024-11-06T21:06:53 IST" name="loginTest" description="verfies with valid user able to login or not" data-provider="LoginTestDataProvider" finished-at="2024-11-06T21:06:58 IST" duration-ms="4622" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at uiutility.BrowserUtility.getVisibleText(BrowserUtility.java:62)
 at pages.MyAccountPage.getUserName(MyAccountPage.java:14)
-at uitest.LoginTest3.loginTest(LoginTest3.java:23)
+at uitest.LoginTest.loginTest(LoginTest3.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -99,11 +99,11 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:uitest.LoginTest3@7d286fb6]" started-at="2024-11-06T21:06:58 IST" name="setUp" description="Load the homepage of the website" finished-at="2024-11-06T21:07:21 IST" duration-ms="23412" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:uitest.LoginTest@7d286fb6]" started-at="2024-11-06T21:06:58 IST" name="setUp" description="Load the homepage of the website" finished-at="2024-11-06T21:07:21 IST" duration-ms="23412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(uipojo.User)[pri:0, instance:uitest.LoginTest3@7d286fb6]" started-at="2024-11-06T21:07:21 IST" name="loginTest" description="verfies with valid user able to login or not" data-provider="LoginTestDataProvider" finished-at="2024-11-06T21:07:26 IST" duration-ms="4601" status="PASS">
+        <test-method signature="loginTest(uipojo.User)[pri:0, instance:uitest.LoginTest@7d286fb6]" started-at="2024-11-06T21:07:21 IST" name="loginTest" description="verfies with valid user able to login or not" data-provider="LoginTestDataProvider" finished-at="2024-11-06T21:07:26 IST" duration-ms="4601" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,7 +114,7 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-      </class> <!-- uitest.LoginTest3 -->
+      </class> <!-- uitest.LoginTest -->
     </test> <!-- Auomation-Assignment -->
   </suite> <!-- Default Suite -->
 </testng-results>

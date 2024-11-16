@@ -22,8 +22,6 @@ public class LoginDataProvider {
         FileReader fileReader= new FileReader(testDataFile);
         System.out.println(testDataFile);
         TestData data=gson.fromJson(fileReader, TestData.class); //deserlization
-
-
         List<Object[]> dataToReturn=new ArrayList<>();
         for(User user:data.getData()){
             dataToReturn.add(new Object[] {user});

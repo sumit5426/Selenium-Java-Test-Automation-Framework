@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 public class LoggerUtility {
 
 
-    private LoggerUtility(){
+    private LoggerUtility(){ //singleton design pattern
 
     }
 

@@ -1,12 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Ecom LoginTest Suite" parallel="methods" thread-count="2" verbose="1">
-    <test name="Nopackage">
+<suite name="Ecom LoginTest Suite" parallel="false" thread-count="2" verbose="1">
+    <test name="Parallel login test">
         <parameter name="browser" value="${browser}"></parameter>
-        <parameter name="isLambdaTest" value="${isLambdaTest}"></parameter>
+        <parameter name="isLambdaTest" value="true"></parameter>
         <parameter name="isHeadless" value="${isHeadless}"></parameter>
+        <parameter name="environmentName" value="QA"></parameter>
         <classes>
-            <class name="uitest.LoginTest3"/>
+            <class name="uitest.LoginTest"/>
         </classes>
     </test>
 

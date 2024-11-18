@@ -7,8 +7,6 @@ Q
 !src/test/java/pages/HomePage.java,4\2\42b8300070bf5b4b5a0097b050c9368a280f7ab1
 S
 #src/test/java/uitest/LoginTest.java,a\a\aa016211f9bded6ab27e29945156700e3e4f4c5f
-T
-$src/test/java/uitest/LoginTest3.java,9\f\9f75ab9fee7e127506c70109e2fa47c386d7f8bb
 R
 "src/test/java/pages/LoginPage.java,2\f\2febc867dad266b12f3cf09596e572e0dcf37dbf
 V
@@ -105,3 +103,7 @@ Y
 )src/test/java/pages/ShoppingCartPage.java,9\3\935d696597f3f17f84fac31cd31849665f266f0e
 [
 +src/test/java/pages/ConfirmAddressPage.java,5\5\554537fa877a77a759b7416a69ae6d4257655fcd
+U
+%src/test/java/pages/ShipmentPage.java,c\7\c777b0fc419f60ea5697db9a0a2bf30f0a2ea5f5
+T
+$src/test/java/pages/PaymentPage.java,5\8\5843248233169b916c9f84c882a34c4b7795ba44

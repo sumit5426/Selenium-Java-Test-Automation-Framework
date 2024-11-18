@@ -1,6 +1,8 @@
 package uitest;
 
 import static Constants.Size.*;
+
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.SearchResultPage;
@@ -18,7 +20,10 @@ public class ProductCheckOut extends TestBase{
 
     @Test(description = "verify user able to buy a dress or not")
     public void checkoutTest(){
-        searchResultPage.clickOnProductAt(0).changeSize(M).addToCart().checkOutCart().checkOut();
+       String result= searchResultPage.clickOnProductAt(0).changeSize(M).addToCart().checkOutCart().
+                checkOut().goToShipment().goToPaymentPage().makePaymentByWire();
+        System.out.println(result);
+        Assert.assertTrue(result.contains("complete"));
 
     }
 }

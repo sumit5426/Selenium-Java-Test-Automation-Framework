@@ -120,6 +120,14 @@ public abstract class BrowserUtility {
         logger.info("Login operation is performed");
 
     }
+
+    public void clickOnCheckBox(By locator) {
+        //  = driver.get().findElement(locator);
+        WebElement element= wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        element.click();
+        logger.info("Login operation is performed");
+
+    }
     public void clickOn(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
         logger.info("Login operation is performed");

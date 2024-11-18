@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7bf41ab-2ec5-41b1-a226-6ce6f5a22b66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/905a1862766004a48ce2bfc8eecd69ede353f41d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/905a1862766004a48ce2bfc8eecd69ede353f41d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f75ab9fee7e127506c70109e2fa47c386d7f8bb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9f75ab9fee7e127506c70109e2fa47c386d7f8bb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ConfirmAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ConfirmAddressPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/ProductCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/ProductCheckOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiutility/BrowserUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiutility/BrowserUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestData/LoginData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/LoginData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +58,7 @@
       <recent name="C:\Users\Lead\IdeaProjects\Auomation-Assignment\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ProductCheckOut.checkoutTest">
+  <component name="RunManager" selected="TestNG.C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml">
     <configuration name="AddNewAddressTest.addNewAddress" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Auomation-Assignment" />
       <extension name="coverage">
@@ -82,6 +77,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Auomation-Assignment" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InvalidLoginTest.invalidCredentiallogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Auomation-Assignment" />
       <extension name="coverage">
@@ -93,24 +98,6 @@
       <option name="PACKAGE_NAME" value="uitest" />
       <option name="MAIN_CLASS_NAME" value="uitest.InvalidLoginTest" />
       <option name="METHOD_NAME" value="invalidCredentiallogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.loginWithJSONTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Auomation-Assignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uitest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uitest" />
-      <option name="MAIN_CLASS_NAME" value="uitest.LoginTest" />
-      <option name="METHOD_NAME" value="loginWithJSONTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,19 +142,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml" />
       <item itemvalue="TestNG.AddNewAddressTest.addNewAddress" />
       <item itemvalue="TestNG.InvalidLoginTest.invalidCredentiallogin" />
-      <item itemvalue="TestNG.LoginTest.loginWithJSONTest" />
       <item itemvalue="TestNG.ProductCheckOut.checkoutTest" />
       <item itemvalue="TestNG.SearchProductTest.searchProductFunctionality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml" />
         <item itemvalue="TestNG.ProductCheckOut.checkoutTest" />
         <item itemvalue="TestNG.SearchProductTest.searchProductFunctionality" />
         <item itemvalue="TestNG.AddNewAddressTest.addNewAddress" />
         <item itemvalue="TestNG.InvalidLoginTest.invalidCredentiallogin" />
-        <item itemvalue="TestNG.LoginTest.loginWithJSONTest" />
       </list>
     </recent_temporary>
   </component>

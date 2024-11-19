@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
       - uses: actions/checkout@v4
       
       - name: Set up JDK 17
@@ -35,14 +36,14 @@ jobs:
 
       - name: Upload Screenshots as Artifacts
         if: always()
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots
           path: screenshots/
 
       - name: Upload Test Report
         if: always()
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4
         with:
           name: Test Report
           path: report.html
@@ -64,7 +65,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
          folder: public/extent-reports/
-         token: ${{secrets.SELENIUM_REPORT}}
+         token: ${{ secrets.SELENIUM_REPORT }}
          clean: true
        
 

@@ -18,7 +18,7 @@ public class AddNewAddressTest extends TestBase{
       addressPojo=FakerAddressUtility.getFakeAddress();
     }
 
-    @Test
+    @Test(description = "Adding product shipping address")
     public void addNewAddress(){
         String addressTag=myAccountPage.goToNewAddressCreatePage().saveAddress(addressPojo);
         Assert.assertEquals(addressTag,addressPojo.getAddressAlias().toUpperCase());

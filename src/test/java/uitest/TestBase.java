@@ -33,6 +33,9 @@ public class TestBase {
                       ITestResult result) throws MalformedURLException {
         logger.info("isLambdaTest value: " + isLambdaTest);
         logger.info("is headless value: " + isHeadless);
+        logger.info("Browser is: " + browser);
+        logger.info("environment is: " + environmentName);
+
         Env env = Env.valueOf(environmentName.toUpperCase());
         //  convert a String value into an instance of the Env enum
         this.isLambdaTest = isLambdaTest;

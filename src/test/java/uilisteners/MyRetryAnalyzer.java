@@ -16,7 +16,7 @@ public class MyRetryAnalyzer implements IRetryAnalyzer {
 
     @Override
     public boolean retry(ITestResult result) {
-        logger.info("Test Case is going to enter in reTry analysis");
+        logger.info("Test Case is going to enter in reTry analyzer");
         if (currentAttempt < MAX_NUM_OF_ATTEMPTS) {
             logger.info("Attempt no in the retry Analyser is "+currentAttempt);
             currentAttempt++;

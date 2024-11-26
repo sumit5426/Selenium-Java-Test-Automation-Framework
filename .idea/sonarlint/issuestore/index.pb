@@ -107,3 +107,9 @@ U
 %src/test/java/pages/ShipmentPage.java,c\7\c777b0fc419f60ea5697db9a0a2bf30f0a2ea5f5
 T
 $src/test/java/pages/PaymentPage.java,5\8\5843248233169b916c9f84c882a34c4b7795ba44
+c
+3test-output/Default Suite/Auomation-Assignment.html,9\f\9f6c27372284fa9ec9ff08d4be627b354869a6cc
+F
+test-output/index.html,c\1\c10f928fc0f061b63f6363f7a2541846b1eeda4d
+[
++test-output/Default Suite/testng-failed.xml,d\7\d7835a5594310bda9db861236341bd18f8839de7

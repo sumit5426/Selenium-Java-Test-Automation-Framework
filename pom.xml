@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Auomation-Assignment</name>
+    <name>Automation-Assignment</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -28,6 +28,7 @@
                         <browser>chrome</browser>
                         <isLambdaTest>false</isLambdaTest>
                         <isHeadless>false</isHeadless>
+                        <environmentName>QA</environmentName>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>

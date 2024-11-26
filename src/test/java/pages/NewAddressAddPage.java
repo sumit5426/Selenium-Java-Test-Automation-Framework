@@ -2,12 +2,12 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import uipojo.AddressPojo;
 import uiutility.BrowserUtility;
 
-public class NewAddressAddPage extends BrowserUtility {
+
+public final class NewAddressAddPage extends BrowserUtility {
+
     private static final By COMPANY_TEXT_BOX_LOCATOR= By.id("company");
     private static final By ADDRESS_TEXT_BOX_LOCATOR= By.id("address1");
     private static final By ADDRESS_TEXT_BOX2_LOCATOR= By.id("address2");
@@ -30,6 +30,7 @@ public class NewAddressAddPage extends BrowserUtility {
 
 
     public String saveAddress(AddressPojo address){
+        logger.info("Entering all new address details");
         enterText(COMPANY_TEXT_BOX_LOCATOR,address.getCompany());
         enterText(ADDRESS_TEXT_BOX_LOCATOR, address.getAddressLine1());
         enterText(ADDRESS_TEXT_BOX2_LOCATOR,address.getAddressLine2());
@@ -42,6 +43,7 @@ public class NewAddressAddPage extends BrowserUtility {
         enterText(ADDRESS_TAG_TEXT_BOX_LOCATOR,address.getAddressAlias());
         selectFromDropDownData(STATE_DROPDOWN_LOCATOR,"Florida");
         clickOn(ADDRESS_SAVE_BUTTON_LOCATOR);
-       return getVisibleText(ADDRESS_TAG_LOCATOR);
+        logger.info("All new address details has been entered");
+        return getVisibleText(ADDRESS_TAG_LOCATOR);
     }
 }

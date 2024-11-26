@@ -1,21 +1,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Ecom LoginTest Suite" parallel="true" thread-count="2" verbose="1">
+    <listeners>
+        <listener class-name="uilisteners.TestListener"></listener>
+    </listeners>
     <test name="Parallel login test">
         <parameter name="browser" value="${browser}"></parameter>
-        <parameter name="isLambdaTest" value="true"></parameter>
+        <parameter name="isLambdaTest" value="${isLambdaTest}"></parameter>
         <parameter name="isHeadless" value="${isHeadless}"></parameter>
-        <parameter name="environmentName" value="QA"></parameter>
+        <parameter name="environmentName" value="${environmentName}"></parameter>
         <classes>
             <class name="uitest.LoginTest"/>
             <class name="uitest.SearchProductTest"/>
             <class name="uitest.ProductCheckOut"/>
             <class name="uitest.AddNewAddressTest"/>
             <class name="uitest.InvalidLoginTest"/>
-
-
         </classes>
     </test>
-
-
 </suite>

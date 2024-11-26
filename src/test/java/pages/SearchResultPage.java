@@ -1,13 +1,17 @@
 package pages;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import uiutility.BrowserUtility;
+import uiutility.LoggerUtility;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class SearchResultPage extends BrowserUtility {
+public final class SearchResultPage extends BrowserUtility {
+    Logger logger= LoggerUtility.getLogger(this.getClass());
+
     public SearchResultPage(WebDriver driver) {
         super(driver);
     }
@@ -21,7 +25,8 @@ public class SearchResultPage extends BrowserUtility {
     }
 
     public boolean isSearchTermPresentInProductList(String searchTerm){
-       List<String> productKeyword= Arrays.asList(searchTerm.toLowerCase().split(" "));
+        logger.info("Checking correct product are displaying or not");
+        List<String> productKeyword= Arrays.asList(searchTerm.toLowerCase().split(" "));
        List<String> productNameList= getAllVisibleText(ALL_PRODUCT_NAME_LOCATOR);
        boolean result=productNameList.stream().anyMatch(name->(productKeyword.stream().
                anyMatch(name.toLowerCase()::contains)));
@@ -29,6 +34,7 @@ public class SearchResultPage extends BrowserUtility {
     }
 
     public ProductDetailPage clickOnProductAt(int index){
+        logger.info("Clicking on selected product to view product details");
         clickOn(getAllVisibleElements(ALL_PRODUCT_NAME_LOCATOR).get(index));
         ProductDetailPage productDetailPage=new ProductDetailPage(getDriver());
         return productDetailPage;

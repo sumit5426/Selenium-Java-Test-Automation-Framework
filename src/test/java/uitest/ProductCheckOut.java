@@ -18,11 +18,11 @@ public class ProductCheckOut extends TestBase{
      searchResultPage=  homePage.goToLoginPage().doLoginWith(VALID_EMAIL_ADDRESS,VALID_PASSWORD).searchForProduct(SEARCH_TERM);
     }
 
-    @Test(description = "verify user able to buy a dress or not")
+    @Test(description = "verify user able to buy a product or not")
     public void checkoutTest(){
        String result= searchResultPage.clickOnProductAt(0).changeSize(M).addToCart().checkOutCart().
-                checkOut().goToShipment().goToPaymentPage().makePaymentByWire();
-        System.out.println(result);
+               goToCheckOutCartPage().goToShipmentPage().goToPaymentPage().makePaymentByWire();
+        logger.info("Result from payment: " + result);
         Assert.assertTrue(result.contains("complete"));
 
     }

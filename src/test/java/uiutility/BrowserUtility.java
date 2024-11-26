@@ -24,7 +24,7 @@ import java.util.List;
 
 public abstract class BrowserUtility {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    private Logger logger = LoggerUtility.getLogger(this.getClass());
+    protected Logger logger = LoggerUtility.getLogger(this.getClass());
     private WebDriverWait wait;
 
     public WebDriver getDriver() {
@@ -39,16 +39,6 @@ public abstract class BrowserUtility {
         wait=new WebDriverWait(driver, Duration.ofSeconds(30L));
     }
 
-    //    public  BrowserUtility(String browserName){
-//        if(browserName.equalsIgnoreCase("chrome")){
-//            driver=new ChromeDriver();
-//        } else if (browserName.equalsIgnoreCase("edge")) {
-//            driver=new EdgeDriver();
-//        }
-//        else {
-//            System.err.println("Incorrect Browser Details");
-//        }
-//    }
     public BrowserUtility(Browser browserName, boolean isHeadless) {
 
         if (browserName == Browser.CHROME) {
@@ -61,12 +51,12 @@ public abstract class BrowserUtility {
                 options.addArguments("--disable-dev-shm-usage"); // helps with memory issues
                 options.addArguments("--no-sandbox"); // helps avoid sandbox issues
                 driver.set(new ChromeDriver(options));
-                wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30l));
+                wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
 
             } else {
                 logger.info("Local normal browser is going to initialized "+browserName);
                 driver.set(new ChromeDriver());
-                wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30l));
+                wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
 
             }
         } else if (browserName == Browser.EDGE) {
@@ -78,12 +68,12 @@ public abstract class BrowserUtility {
                 options.addArguments("--window--size=1920,1080");
                 options.addArguments("--disable-gpu");
                 driver.set(new EdgeDriver(options));
-                wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30l));
+                wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
 
             } else {
                 logger.info("Local normal browser is going to initialized"+browserName);
                 driver.set(new EdgeDriver());
-                wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30l));
+                wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
             }
         } else if (browserName == Browser.FIREFOX) {
             logger.info("Local browser is "+browserName);
@@ -101,31 +91,36 @@ public abstract class BrowserUtility {
                 wait=new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
             }
         } else {
+            logger.error("Incorrect Browser Details");
             System.err.println("Incorrect Browser Details");
         }
     }
 
     public void goToWebsite(String url) {
         driver.get().get(url);
+        logger.info("Browser is invoked with "+url);
     }
 
     public void maximizeBrowser() {
+
         driver.get().manage().window().maximize();
+        logger.info("Browser is Maximized");
+
     }
 
     public void clickOn(By locator) {
-       //  = driver.get().findElement(locator);
+        logger.info("Waiting for element to be clickable");
         WebElement element= wait.until(ExpectedConditions.elementToBeClickable(locator));
         element.click();
-        logger.info("Login operation is performed");
+        logger.info("Click operation is performed");
 
     }
 
     public void clickOnCheckBox(By locator) {
-        //  = driver.get().findElement(locator);
+        logger.info("Waiting for element to be visible");
         WebElement element= wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         element.click();
-        logger.info("Login operation is performed");
+        logger.info("Click operation is performed on checkBox");
 
     }
     public void clickOn(WebElement element) {
@@ -135,9 +130,7 @@ public abstract class BrowserUtility {
     }
 
     public void enterText(By locator, String textToEnter) {
-       //  = driver.get().findElement(locator);
         WebElement element= wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-
         element.sendKeys(textToEnter);
         logger.info("Text Entered in the text box is "+textToEnter);
     }
@@ -150,6 +143,8 @@ public abstract class BrowserUtility {
       //  WebElement element = driver.get().findElement(locator);
         WebElement element= wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         element.clear();
+        logger.info("TextBox clean operation is performed");
+
     }
 
     public String getVisibleText(By Locator) {
@@ -165,7 +160,7 @@ public abstract class BrowserUtility {
 
     public List<String> getAllVisibleText(By Locator) {
         List<WebElement> webElementList = driver.get().findElements(Locator);
-        logger.info("element is going to retrieve from list  ");
+        logger.info("element are going to retrieve from list  ");
         List<String> productList=new ArrayList<>();
         for (WebElement element:webElementList){
             productList.add(getVisibleText(element));
@@ -176,19 +171,22 @@ public abstract class BrowserUtility {
 
     public List<WebElement> getAllVisibleElements(By Locator) {
         List<WebElement> webElementList = driver.get().findElements(Locator);
-        logger.info("element is going to retrieve from list  ");
+        logger.info("element are going to retrieve from list  ");
        return webElementList;
     }
 
     public void selectFromDropDownData(By locator,String optionToSelect)  {
-        WebElement webElement= driver.get().findElement(locator);
-        Select select=new Select(webElement);
+        logger.info("Selecting visible text from the dropdown");
+        WebElement element= driver.get().findElement(locator);
+        Select select=new Select(element);
         select.selectByVisibleText(optionToSelect);
+        logger.info(optionToSelect+" is selected from the dropdown");
 
 
     }
     public String takeScreenShot(String name) {
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver.get();
+        logger.info(" driver is upcasted to TakeScreenShot");
         File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
         Date date = new Date();
         SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");

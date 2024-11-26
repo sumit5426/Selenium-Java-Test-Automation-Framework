@@ -17,7 +17,7 @@ public class SearchProductTest extends TestBase{
         myAccountPage=homePage.goToLoginPage().doLoginWith(VALID_EMAIL_ADDRESS,VALID_PASSWORD);
     }
 
-    @Test(description = "verifies error message displaying or not with invalid details", groups = {"e2e", "sanity"})
+    @Test(description = "verifies product search functionality", groups = {"e2e", "sanity"})
     public void searchProductFunctionality(){
        boolean actualResult= myAccountPage.searchForProduct(SEARCH_TERM).isSearchTermPresentInProductList(SEARCH_TERM);
         Assert.assertTrue(actualResult);

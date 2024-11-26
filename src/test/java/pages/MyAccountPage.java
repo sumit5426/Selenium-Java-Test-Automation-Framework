@@ -23,13 +23,16 @@ public final class MyAccountPage extends BrowserUtility {
         return getVisibleText(USER_NAME_LOCATOR);
 
     } public SearchResultPage searchForProduct(String itemName){
+        logger.info("searching the product with "+ itemName);
         enterText(SEARCH_TEXT_BOX_LOCATOR,itemName);
         enterSpecialKey(SEARCH_TEXT_BOX_LOCATOR, Keys.ENTER);
+        logger.info(itemName +" in entered and clicked ");
         SearchResultPage searchResultPage=new SearchResultPage(getDriver());
         return searchResultPage;
 
     }
     public NewAddressAddPage goToNewAddressCreatePage(){
+        logger.info("Clicking on new address add button");
         clickOn(ADD_NEW_ADDRESS_LOCATOR);
         NewAddressAddPage newAddressAddPage=new NewAddressAddPage(getDriver());
         return newAddressAddPage;

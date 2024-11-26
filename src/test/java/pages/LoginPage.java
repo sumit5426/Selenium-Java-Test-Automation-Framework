@@ -29,6 +29,7 @@ public final class LoginPage extends BrowserUtility {
      }
 
      public LoginPage doLoginWithInvalidDetails(String emailAddress, String password){
+         logger.info("Entering inValid email id, password and clicking on submit button");
          enterText(EMAIL_TEXT_BOX_LOCATOR,emailAddress);
          enterText(PASSWORD_TEXT_BOX_LOCATOR,password);
          clickOn(SUBMIT_BUTTON_LOCATOR);
@@ -37,6 +38,7 @@ public final class LoginPage extends BrowserUtility {
      }
 
      public String loginErrorMessage(){
+         logger.info("Retrieving Error message while login with incorrect details");
          return getVisibleText(INVALID_ERROR_MESSAGE_LOCATOR);
      }
 

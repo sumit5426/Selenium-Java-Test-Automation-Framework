@@ -36,6 +36,7 @@ public class LoginDataProvider {
     }
     @DataProvider(name = "loginExcelDataProvider")
     public Iterator<Object[]> loginExcelDataProvider(){
+
         return ExcelReaderUtility.readExcelFile("LoginData.xlsx");
     }
 }

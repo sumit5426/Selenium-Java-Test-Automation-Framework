@@ -36,8 +36,11 @@ public class TestBase {
         logger.info("Browser is: " + browser);
         logger.info("environment is: " + environmentName);
 
-        Env env = Env.valueOf(environmentName.toUpperCase());
+        // Store environment globally
+        // ConfigManager.getInstance().setEnvironmentName(environmentName);
+        // create config class singleton class
         //  convert a String value into an instance of the Env enum
+        Env env = Env.valueOf(environmentName.toUpperCase());
         this.isLambdaTest = isLambdaTest;
         WebDriver lambadaDriver;
 
@@ -63,7 +66,14 @@ public class TestBase {
             logger.info("Remote browser session is quited");
             LambdaTestUtlity.quitSession();
         }
-        logger.info("Local browser session is quited");
-        homePage.getDriver().quit();
+        else {
+            logger.info("Local browser session is quited");
+            if (homePage.getDriver() != null) {
+                homePage.getDriver().quit();
+            }
+            else {
+                logger.warn("Local WebDriver instance is null, no session to quit.");
+            }
+        }
     }
 }

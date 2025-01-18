@@ -5,30 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7bf41ab-2ec5-41b1-a226-6ce6f5a22b66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/905a1862766004a48ce2bfc8eecd69ede353f41d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/905a1862766004a48ce2bfc8eecd69ede353f41d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestData/LoginData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/LoginData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ConfirmAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ConfirmAddressPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/NewAddressAddPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/NewAddressAddPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PaymentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductDetailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ShipmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ShipmentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uidataprovider/LoginDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uidataprovider/LoginDataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uilisteners/MyRetryAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uilisteners/MyRetryAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/AddNewAddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/AddNewAddressTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/InvalidLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/InvalidLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/ProductCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/ProductCheckOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uitest/SearchProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/SearchProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uipojo/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uipojo/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uitest/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitest/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uiutility/BrowserUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiutility/BrowserUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uiutility/ExcelReaderUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiutility/ExcelReaderUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uiutility/JsonUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiutility/JsonUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +37,10 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2oQAvnhe7jYtNAvMYLM6ezp1vNn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -57,18 +49,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Notification.DisplayName-DoNotAsk-Lombok plugin&quot;: &quot;Lombok integration problem&quot;,
-    &quot;Notification.DoNotAsk-Lombok plugin&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Lombok plugin": "Lombok integration problem",
+    "Notification.DoNotAsk-Lombok plugin": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml.executor": "Run",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pages" />
@@ -78,7 +74,7 @@
       <recent name="C:\Users\Lead\IdeaProjects\Auomation-Assignment\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddNewAddressTest.addNewAddress">
+  <component name="RunManager" selected="TestNG.C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml">
     <configuration name="AddNewAddressTest.addNewAddress" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Auomation-Assignment" />
       <extension name="coverage">
@@ -170,8 +166,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddNewAddressTest.addNewAddress" />
         <item itemvalue="TestNG.C:/Users/Lead/IdeaProjects/Auomation-Assignment/testng.xml" />
+        <item itemvalue="TestNG.AddNewAddressTest.addNewAddress" />
         <item itemvalue="TestNG.ProductCheckOut.checkoutTest" />
         <item itemvalue="TestNG.SearchProductTest.searchProductFunctionality" />
         <item itemvalue="TestNG.InvalidLoginTest.invalidCredentiallogin" />
@@ -239,11 +235,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/uitest/SearchProductTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/uitest/AddNewAddressTest.java</url>
           <line>21</line>

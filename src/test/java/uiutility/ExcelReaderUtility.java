@@ -35,7 +35,12 @@ public class ExcelReaderUtility {
             row = rowIterator.next();
             emaillAddressCell = row.getCell(0);
             passwordCell = row.getCell(1);
+            //if it is numeric
+            double num =passwordCell.getNumericCellValue();
+            // Create User object with the string values
             User user = new User(emaillAddressCell.toString(), passwordCell.toString());
+            // Store the username and password in an array
+            // userList.add(new String[]{username, password}); then test arugment will be string
             userList.add(user);
 
         }

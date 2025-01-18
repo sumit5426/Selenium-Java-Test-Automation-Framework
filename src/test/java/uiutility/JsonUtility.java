@@ -22,8 +22,9 @@ public class JsonUtility {
             throw new RuntimeException(e);
         }
         // deserlization json to java
+        // Converts the JSON data into a Config object.
         Config config=gson.fromJson(fileReader, Config.class);
-
+        // Get specific environment
         Environment environment=config.getEnvironments().get(env.name());
         return environment;
 

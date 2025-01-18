@@ -30,6 +30,7 @@ final public class HomePage extends BrowserUtility {
         super(driver);
         logger.info("Remote Browser that going to launch is Lambda");
         logger.info("Reading the url from the environment json or properties file ");
+        // goToWebsite(JsonUtility.readJSON(env) return environment
         goToWebsite(JsonUtility.readJSON(env).getUrl());
         maximizeBrowser();
 
@@ -41,7 +42,6 @@ final public class HomePage extends BrowserUtility {
         logger.info("Going to create login page object inside homepage");
         LoginPage loginPage = new LoginPage(getDriver());
         return loginPage;
-
     }
 
 }

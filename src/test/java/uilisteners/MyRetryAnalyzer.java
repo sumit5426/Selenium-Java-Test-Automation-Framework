@@ -17,12 +17,14 @@ public class MyRetryAnalyzer implements IRetryAnalyzer {
     @Override
     public boolean retry(ITestResult result) {
         logger.info("Test Case is going to enter in reTry analyzer");
+        logger.info("Retry Analyzer: Test Case - " + result.getMethod().getMethodName());
+
         if (currentAttempt < MAX_NUM_OF_ATTEMPTS) {
             logger.info("Attempt no in the retry Analyser is "+currentAttempt);
             currentAttempt++;
             return true;
         }
-        logger.warn("Maximum no of retry limit is existed");
+        logger.warn("Maximum no of retry limit is existed :"+ result.getMethod().getMethodName());
 
         return false;
     }

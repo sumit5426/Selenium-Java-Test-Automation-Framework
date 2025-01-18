@@ -36,6 +36,7 @@ public abstract class BrowserUtility {
     public BrowserUtility(WebDriver driver) {
         logger.info("Remote / local driver is initialized");
         this.driver.set(driver);
+        //this.driver = driver; other page class driver instance to global driver
         wait=new WebDriverWait(driver, Duration.ofSeconds(30L));
     }
 
